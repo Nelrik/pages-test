@@ -5,6 +5,7 @@
 /tmp
 /out-tsc
 /bazel-out
+/assest/logos/*.*
 
 # Node
 /node_modules
