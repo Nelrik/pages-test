@@ -35,7 +35,7 @@ jobs:
       run: npm install
 
     - name: Build Angular App
-      run: ng build --prod --base-href https://nelrik.github.io/pages-test/src/ --deploy-url https://nelrik.github.io/pages-test/src/
+      run: ng build --prod --base-href /pages-test/src/ --deploy-url /pages-test/src/
 
   deploy:
     runs-on: ubuntu-latest
@@ -45,5 +45,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        publish_dir: ./dist/pages-test
+        publish_dir: ./dist/pages-test/src/
         force_orphan: true
