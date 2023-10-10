@@ -35,7 +35,7 @@ jobs:
       run: npm install
 
     - name: Build Angular App
-      run: ng build --prod --base-href /pages-test/src/ --deploy-url /pages-test/src/
+      run: ng build --base-href https://nelrik.github.io/pages-test/
 
   deploy:
     runs-on: ubuntu-latest
